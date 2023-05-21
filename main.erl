@@ -10,7 +10,7 @@ main() ->
 % The game loop that calls all the other functions
 game_loop(RandNum) ->
     UserGuess = get_guess(),
-    io:fwrite("Your guess is: ~p Answer: ~p\n", [UserGuess, RandNum]),
+    %io:fwrite("Your guess is: ~p Answer: ~p\n", [UserGuess, RandNum]), Debug code
     compare(RandNum, UserGuess),
     game_loop(RandNum).
 
